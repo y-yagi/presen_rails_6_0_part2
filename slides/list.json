@@ -21,6 +21,7 @@
   "multiple_db_12.md",
   "multiple_db_13.md",
   "multiple_db_14.md",
+  "multiple_db_15.md",
   "multiple_db_99.md",
   "parallel_testing_01.md",
   "parallel_testing_02.md",
@@ -29,6 +30,9 @@
   "parallel_testing_05.md",
   "parallel_testing_06.md",
   "webpacker_01.md",
+  "webpacker_02.md",
+  "webpacker_03.md",
+  "webpacker_04.md",
   "ac_testing_01.md",
   "zeitwerk_01.md",
   "matome.md"
