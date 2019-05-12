@@ -11,7 +11,7 @@ module Admin
 end
 ```
 
-と
+vs
 
 ```ruby
 class Admin::UsersController < ApplicationController
