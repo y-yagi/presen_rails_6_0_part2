@@ -1,7 +1,7 @@
 ### multiple DB
 
 * レプリカに対して書き込みを実行するとエラーになる
-  * レプリカかどうかはconfigのreplica keyで決まる
+  * レプリカかどうかは設定ファイルのreplica keyで決まる
 
 ```ruby
 ActiveRecord::Base.connected_to(database: :primary_replica) { User.create! }

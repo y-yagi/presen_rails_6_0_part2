@@ -1,6 +1,6 @@
 ### multiple DB
 
-モデルで接続先を指定することもできる
+モデルで接続先を指定出来る
 
 ```ruby
 class Monkey < ApplicationRecord
