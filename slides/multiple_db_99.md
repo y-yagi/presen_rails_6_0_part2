@@ -12,6 +12,7 @@
 
 **関連するPR**
 
+* [Add ability to change the names of the default handlers](https://github.com/rails/rails/pull/35132)
 * [For fixtures share the connection pool when there are multiple handlers](https://github.com/rails/rails/pull/34773)
 
 </small>
