@@ -2,6 +2,7 @@
 
 * Railsはデフォルトで書き込み用のロールとしてwriting、読み込み用のロールとしてreadingという名前を使用している
   * ロール名は変更可能
+  * このロール名は後で説明するRackミドルウェアで使用される
 
 ```ruby
 ActiveRecord::Base.reading_role # => :reading

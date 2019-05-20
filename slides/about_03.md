@@ -5,5 +5,4 @@
 * multiple database
 * Parallel Testing
 * Webpacker default
-* Action Cable testing
 * Zeitwerk

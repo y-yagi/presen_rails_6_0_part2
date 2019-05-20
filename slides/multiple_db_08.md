@@ -1,6 +1,7 @@
 ### multiple DB
 
-* `connects_to`にはロールとDB名のペアを指定する
+* connects_toにはロールとDB名のHashを指定する
+
   ```ruby
   connects_to database: { writing: :animals }
   ```

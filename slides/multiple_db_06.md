@@ -1,4 +1,4 @@
-### multiple DB
+### ReadOnly
 
 * adapter毎に"READ"とみなすQUERYを定義して、それ以外は全て書き込み処理とみなすようにしている
 

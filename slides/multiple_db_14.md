@@ -1,7 +1,8 @@
 ### multiple DB
 
-* マスター / レプリカの指定はロールで行う
-  * 先に説明した通り、デフォルトの場合、マスターはwriting、レプリカはreadingというロール
+* 接続先の指定はロールで行う
+  * デフォルトの場合、書き込み処理はwriting、読み込み処理はreadingというロールが使用される
+  * connects_toでそれぞれのロールで使用するDBを指定する必要がある
 
 ```ruby
 class ApplicationRecord < ActiveRecord::Base
