@@ -7,7 +7,7 @@
   "action_cable_04.md",
   "action_cable_05.md",
   "action_mailer_01.md",
-  "action_mailer_01.md",
+  "action_mailer_02.md",
   "action_pack_01.md",
   "action_view_01.md",
   "active_job_01.md",
@@ -16,5 +16,6 @@
   "active_storage_01.md",
   "active_support_01.md",
   "railties_01.md",
+  "others_01.md",
   "matome.md"
 ]
