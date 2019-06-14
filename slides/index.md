@@ -1,3 +1,3 @@
-## Rails 6.0 Component edition
+## Rails 6.0<br>(Component edition)
 
 **y-yagi@Ginza.rb**
