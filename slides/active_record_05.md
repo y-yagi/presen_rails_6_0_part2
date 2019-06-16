@@ -1,13 +1,18 @@
 #### [Add insert_all to ActiveRecord models](https://github.com/rails/rails/pull/35077)
 
-* bulk insert用のinsert_all / insert_all! / upsert_allメソッドを追加
-  * callback、validationは実行されないので、callbackで設定している値は明示的に指定する必要がる
-  * created_at / updated_atも注意が必要
+* insert_all!はunique constraintに違反した場合ActiveRecord::RecordNotUniqueをraiseするようになっている
+  * insert_allは無視
 
 ```ruby
-User.insert_all!([
-  { name: 'a', created_at: Time.current, updated_at: Time.current },
-  { name: 'b', created_at: Time.current, updated_at: Time.current },
-  { name: 'c', created_at: Time.current, updated_at: Time.current }
+User.insert_all([
+  { id: 1, name: 'a', created_at: Time.current, updated_at: Time.current },
+  { id: 1, name: 'b', created_at: Time.current, updated_at: Time.current },
 ])
+# => INSERT INTO "users"("id","name","created_at","updated_at") VALUES (1, 'a', '2019-03-05 23:10:02.382965', '2019-03-05 23:10:02.382977'), (1, 'b', '2019-03-05 23:10:02.382980', '2019-03-05 23:10:02.382983') ON CONFLICT  DO NOTHING RETURNING "id"
+
+User.insert_all!([
+  { id: 1, name: 'a', created_at: Time.current, updated_at: Time.current },
+  { id: 1, name: 'b', created_at: Time.current, updated_at: Time.current },
+])
+# => ActiveRecord::RecordNotUnique (PG::UniqueViolation: ERROR:  重複キーが一意性制約"users_pkey"に違反しています)
 ```

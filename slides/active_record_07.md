@@ -1,16 +1,14 @@
-#### [Add insert_all to ActiveRecord models](https://github.com/rails/rails/pull/35077)
+#### [Add negative scopes for all enum values](https://github.com/rails/rails/pull/35381)
 
-* usert_allは名前の通りでUPSERT(PostgreSQL / SQLiteでは`ON CONFLICT`、MySQLでは`ON DUPLICATE KEY UPDATE`)が使用されるようになってる　
+* enumでnegative scope(not_xxx)も定義するようになった
+  * メソッド名のコンフリ気をつけてね
 
 ```ruby
-User.upsert_all([
-  { id: 1, name: 'a', created_at: Time.current, updated_at: Time.current },
-  { id: 2, name: 'b', created_at: Time.current, updated_at: Time.current },
-])
+class Post < ActiveRecord::Base
+  enum status: %i[ drafted active trashed ]
+end
 
-User.upsert_all([
-  { id: 1, name: 'a', created_at: Time.current, updated_at: Time.current },
-  { id: 2, name: 'b', created_at: Time.current, updated_at: Time.current },
-])
-# => INSERT INTO "users"("id","name","created_at","updated_at") VALUES (1, 'a', '2019-06-16 07:36:38.699495', '2019-06-16 07:36:38.699507'), (2, 'b', '2019-06-16 07:36:38.699510', '2019-06-16 07:36:38.699513') ON CONFLICT ("id") DO UPDATE SET "name"=excluded."name","created_at"=excluded."created_at","updated_at"=excluded."updated_at" RETURNING "id"
+Post.not_drafted # => where.not(status: :drafted)
+Post.not_active  # => where.not(status: :active)
+Post.not_trashed # => where.not(status: :trashed)
 ```
