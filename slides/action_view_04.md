@@ -1,7 +1,11 @@
-#### Refactoring Action View
+#### [Add allocations to template renderer subscription](https://github.com/rails/rails/pull/34136)
 
-* そもそもdev環境でメモリリークが発生している、という問題があった
-  * Rails development mode memory leak and slowdown, also on new apps https://github.com/rails/rails/issues/32892
-* この対策としてviewレンダリング周りの処理の改善が行われた
-  * (何か関係ないのも含まれているきがするが)
-* Railsアプリの開発者は影響無いと思うが、Action Viewを拡張するgem作者は影響あると思います
+* template rendering instrumentationでAllocationsの値(GC.stat :total_allocated_objectsの値)を表示するようになった
+
+```
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/_form.html.erb (Duration: 7.1ms | Allocations: 6004)
+  Rendered posts/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 6654)
+Completed 200 OK in 858ms (Views: 848.4ms | ActiveRecord: 0.4ms | Allocations: 1539564)
+```
+

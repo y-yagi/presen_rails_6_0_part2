@@ -20,6 +20,7 @@
   "action_view_03.md",
   "action_view_04.md",
   "action_view_05.md",
+  "action_view_06.md",
   "active_job_01.md",
   "active_job_02.md",
   "active_job_03.md",
@@ -54,6 +55,10 @@
   "active_storage_04.md",
   "active_storage_05.md",
   "active_support_01.md",
+  "active_support_02.md",
+  "active_support_03.md",
+  "active_support_04.md",
+  "active_support_05.md",
   "railties_01.md",
   "others_01.md",
   "matome.md"
