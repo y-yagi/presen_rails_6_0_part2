@@ -1,5 +1,5 @@
 {
-  "name": "presen_rails_6_0",
+  "name": "presen_rails_6_0_part2",
   "version": "0.0.0",
   "private": true,
   "devDependencies": {
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:y-yagi/presen_rails_6_0.git"
+    "url": "git@github.com:y-yagi/presen_rails_6_0_part2.git"
   },
   "scripts": {
     "test": "grunt test"
