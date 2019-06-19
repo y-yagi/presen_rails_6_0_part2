@@ -22,5 +22,5 @@ Rails.application.config.active_job.custom_serializers << MoneySerializer
 ```
 
 <small>
-https://github.com/rails/rails/tree/master/activejob/lib/active_job/serializers 辺りをご参考。
+https://github.com/rails/rails/tree/master/activejob/lib/active_job/serializers <br />辺りをご参考
 </small>

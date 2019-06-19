@@ -1,7 +1,7 @@
 #### [Add `Relation#pick` as short-hand for single-value plucks](https://github.com/rails/rails/pull/31941)
 
 * single-valueを取得する為のメソッド
-* pluck同様、record objectは生成せず値だけを取得する
+* pluck同様、record objectは生成せずに値だけを取得する
   * limit(1).pluck(*column_names).firstのショートハンド
 
 ```ruby

@@ -1,6 +1,5 @@
 #### [Add support for multi environment credentials](https://github.com/rails/rails/pull/33521)
 
-<small>
 ```
 $ EDITOR=vim ./bin/rails credentials:edit -e production
 Adding config/credentials/production.key to store the encryption key: xxx
@@ -23,6 +22,4 @@ File encrypted and saved.
 # aws:
 #   access_key_id: 123
 #   secret_access_key: 345
-
 ```
-</small>

@@ -1,7 +1,7 @@
 #### [Move all npm packages to @rails scope](https://github.com/rails/rails/pull/34905)
 
 * Railsで提供しているnpm packages@rails namespace配下に移動
-* 古いpackageは更新されなくなる
+* 古いpackageは更新されません
 
 ```
 actioncable   → @rails/actioncable

@@ -1,6 +1,6 @@
 #### [Add allocations to template renderer subscription](https://github.com/rails/rails/pull/34136)
 
-* template rendering instrumentationでAllocationsの値(GC.stat :total_allocated_objectsの値)を表示するようになった
+* template rendering instrumentation(ログにでるやつ)でAllocationsの値(GC.stat :total_allocated_objectsの値)を表示するようになった
 
 ```
   Rendering posts/new.html.erb within layouts/application

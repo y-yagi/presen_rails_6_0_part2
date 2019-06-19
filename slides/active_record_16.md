@@ -1,6 +1,6 @@
-#### [Add support for setting Optimizer Hints on databases.](https://github.com/rails/rails/pull/35615)
+#### [Add support for setting Optimizer Hints on databases](https://github.com/rails/rails/pull/35615)
 
-* Optimizer Hints用の#optimizer_hintsメソッドを追加
+* Optimizer Hintsを指定する為のメソッド
 
 ```ruby
 # MySQL
