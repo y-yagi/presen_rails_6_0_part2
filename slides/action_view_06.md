@@ -1,8 +1,8 @@
 #### Refactoring Action View
 
-<small>
+(PR一部)
 
-(PR一部だけ)
+<small>
 
 * [Fix memory leaks in development](https://github.com/rails/rails/pull/35201)
 * [Add a finalizer to inline templates](https://github.com/rails/rails/pull/35374)

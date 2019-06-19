@@ -1,4 +1,4 @@
-#### [Introduce `ActionDispatch::ActionableExceptions`.](https://github.com/rails/rails/pull/34788)
+#### [Introduce `ActionDispatch::ActionableExceptions`](https://github.com/rails/rails/pull/34788)
 
 * Rails標準のエラー画面でエラー内容に応じたアクションを実行出来るようにする為の仕組み
   * ActiveRecord::PendingMigrationError が発生した場合に、エラー画面からdb:migrateが実行出来る
