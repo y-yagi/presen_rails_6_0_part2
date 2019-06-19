@@ -1,6 +1,6 @@
-#### [Add `ActiveRecord::Relation#annotate` for adding SQL comments to ActiveRecord::Relation queries.](https://github.com/rails/rails/pull/35617)
+#### [Add `ActiveRecord::Relation#annotate` for adding SQL comments to ActiveRecord::Relation queries](https://github.com/rails/rails/pull/35617)
 
-* queryにSQLコメントを追加する為の#annotateメソッドを追加
+* queryにSQLコメントを追加する為のメソッド
 
 ```ruby
 Post.where(id: 123).annotate("this is a comment").to_sql
