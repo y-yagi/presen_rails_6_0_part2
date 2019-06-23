@@ -1,6 +1,5 @@
-#### [Deprecate `update_attributes` and `update_attributes!`](https://github.com/rails/rails/pull/31998)
+#### [Add collection cache versioning](https://github.com/rails/rails/commit/4f2ac80d4cdb01c4d3c1765637bed76cc91c1e35)
 
-* update_attributes、及び、update_attributes!メソッドが正式にdeprecateになった
-  * 今後は`update`、`update!`メソッドを使用してね
-* 元々`update`、`update!`メソッド追加された際([Rename update_attributes method to update](https://github.com/rails/rails/pull/8705))に`update_attributes(!)`は"soft deprecation" という扱いになっていた
-  * そろそろ正式にdeprecateにしても良いんじゃね、という意見が出た為deprecateになりました
+* Activ Record Relationでもrecyclable cache keyが出来るようになったよ
+  * ActiveRecord::Relation#cache_keyが返すkeyにはrecordのcountやtimestampは含まれないようになった
+* デフォルトでは無効化されており、ActiveRecord::Base.collection_cache_versioningにtrueを指定した場合のみ有効化される
