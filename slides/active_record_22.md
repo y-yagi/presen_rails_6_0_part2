@@ -1,7 +1,5 @@
-#### その他Deprecated
+#### [Add collection cache versioning](https://github.com/rails/rails/commit/4f2ac80d4cdb01c4d3c1765637bed76cc91c1e35)
 
-* [Deprecate mismatched collation comparison for uniquness validator](https://github.com/rails/rails/pull/35350)
-* [Deprecate `where.not` working as NOR and will be changed to NAND in Rails 6.1](https://github.com/rails/rails/pull/36029)
-* [Deprecate using class level querying methods if the receiver scope regarded as leaked](https://github.com/rails/rails/pull/35280)
-* については、kamipoさんのブログをご参照ください
-  * Rails 6.0でDeprecatedになるActive Recordの振る舞い3つ - かみぽわーる https://blog.kamipo.net/entry/2019/05/15/152652
+* Activ Record Relationでもrecyclable cache keyが出来るようになったよ
+  * ActiveRecord::Relation#cache_keyが返すkeyにはrecordのcountやtimestampは含まれないようになった
+* デフォルトでは無効化されており、ActiveRecord::Base.collection_cache_versioningにtrueを指定した場合のみ有効化される
