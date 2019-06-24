@@ -13,4 +13,4 @@ User.first
 # =>User Load (0.2ms)  SELECT "users".* FROM "users" ORDER BY "users"."created_at" ASC LIMIT ?  [["LIMIT", 1]]
 ```
 
-* primary keyにUUIDのようなauto-incrementing integerじゃない値を使用している場合に、primary keyでorderされても結果は期待通りにならない(firstを使用しても最初の値は取得出来ない)為、そのような場合に任意のカラムでorder出来るようにする為
+* primary keyにUUIDのようなauto-incrementing integerじゃない値を使用している場合に、primary keyでorderしても結果は期待通りにならない(firstを使用しても最初の値は取得出来ない)為、そのような場合に任意のカラムでorder出来るようにする為

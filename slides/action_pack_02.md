@@ -4,8 +4,9 @@
 * driven_byにブロックを指定+そのブロックでbrowser capabilitiesを指定出来る
 
 ```ruby
-driven_by :selenium, using: :headless_chrome, screen_size: [1400, 1400]  do |driver_option|
-  # driver_option.class => Selenium::WebDriver::Chrome::Options
-  driver_option.add_emulation(device_name: 'iPhone 6')
+driven_by :selenium, using: :headless_chrome, screen_size: [1400, 1400]
+  do |driver_option|
+    # driver_option.class => Selenium::WebDriver::Chrome::Options
+    driver_option.add_emulation(device_name: 'iPhone 6')
 end
 ```
