@@ -7,5 +7,5 @@ activemodel.errors.models.person.attributes.name.format
 activemodel.errors.models.person.format
 ```
 
-* のように、model + attributes + format、又は、model + formatのkeyを追加で見るようになっている
-* 上記は、config.active_model.i18n_customize_full_messageをtrueにした場合のみ有効(デフォルトはfalse)
+* 上記のように、model + attributes + format、又は、model + formatのkeyを見るようになっている
+* これはconfig.active_model.i18n_customize_full_messageをtrueにした場合のみ有効(デフォルトはfalse)
