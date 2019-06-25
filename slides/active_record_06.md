@@ -1,6 +1,6 @@
 #### [Add insert_all to ActiveRecord models](https://github.com/rails/rails/pull/35077)
 
-* usert_allは名前の通りでUPSERT(PostgreSQL / SQLiteではON CONFLICT、MySQLではON DUPLICATE KEY UPDATE)が使用されるようになってる　
+* upsert_allは名前の通りでUPSERT(PostgreSQL / SQLiteではON CONFLICT、MySQLではON DUPLICATE KEY UPDATE)が使用されるようになってる　
   * 当然DBはそれらの機能を使用出来るバージョンである必要がある
 
 ```ruby
